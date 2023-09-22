@@ -15,6 +15,7 @@ html{
 3. Từ tổng quan đến chi tiết
 */
 
+/*  Class dùng chung */
 .clear{
     clear: both;
 }
@@ -23,6 +24,30 @@ html{
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-haft {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+
+/* Main */
 #main{
 
 }
@@ -173,13 +198,6 @@ html{
 
 #content .member-list{
     margin-top: 48px;
-    overflow: hidden;
-}
-
-#content .member-item{
-    float: left;
-    width: calc(100%/3);
-    text-align: center;
 }
 
 #content .member-name{
@@ -231,14 +249,12 @@ html{
 
 /* Places */
 .places-list{
-    margin: 32px -8px 0px;
-    padding-bottom: 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-item{
-    float: left;
     width: 33.3333333%;
-    padding: 0 8px;
 }
 .place-img{
     width: 100%;
