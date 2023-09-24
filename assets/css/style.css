@@ -180,7 +180,7 @@ html{
     position: relative;
   }
   
-  .slider img {
+.slider img {
     width: 100%;
     display: none;
     position: absolute;
@@ -188,7 +188,7 @@ html{
     left: 0;
   }
   
-  .slider img:first-child {
+.slider img:first-child {
     display: block;
   }
   
