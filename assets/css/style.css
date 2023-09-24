@@ -9,12 +9,6 @@ html{
     font-family:  Helvetica, Arial, sans-serif;
 }
 
-/* 
-1. Từ ngoài vào trong 
-2. Từ trên xuống dưới
-3. Từ tổng quan đến chi tiết
-*/
-
 /*  Class dùng chung */
 .clear{
     clear: both;
@@ -51,8 +45,12 @@ html{
     width: 100%;
 }
 
-.col-third {
-    width: 33.33333%;
+.col-four {
+    width: 25%;
+}
+
+.col-two {
+    width: 50%;
 }
 .mt-8 {
     margin-top: 8px !important;
@@ -152,7 +150,7 @@ html{
 }
 
 
-#slider{
+/* #slider{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
@@ -162,13 +160,8 @@ html{
     position: absolute;
     bottom: 47px;
     color: #fff;
-    /* left: 50%;
-    transform: translateX(-50%); */
-    /* right: 0%;
-    left: 0%; */
     width: 100%;
     text-align: center;
-    
 }
 #slider .text-heading {
     font-weight: 500;
@@ -177,7 +170,28 @@ html{
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-}
+} */
+
+.slider {
+    width: 100%;
+    margin-top: 46px;
+    padding-top: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider img:first-child {
+    display: block;
+  }
+  
 
 #content{
 
@@ -188,6 +202,7 @@ html{
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 #content .section-heading{
@@ -195,6 +210,7 @@ html{
     text-align: center;
     font-weight: 500;
     letter-spacing: 4px;
+    margin-top: 20px;
 }
 #content .section-sub-heading{
     font-size: 15px;
@@ -202,11 +218,19 @@ html{
     margin-top: 25px;
     /* margin-bottom: 25px; */
 }
+
 #content .about-text{
     margin-top: 25px;
     font-size: 15px;
-    text-align: justify;
-    line-height: 1.4;
+    top: 0%;
+}
+.logo {
+    width: 190px;
+    height: 55px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #content .member-list{
@@ -214,7 +238,8 @@ html{
 }
 
 #content .member-name{
-    font-size: 15px;
+    font-size: 20px;
+    color: #f5a6ba;
 }
 
 #content .member-img{
@@ -245,7 +270,8 @@ html{
     background-color: #f44336;
     color: #fff;
     padding: 3px 4px;
-    margin-left: 16px;
+    margin-top: -12px;
+    float: right;
 }
 
 .tickets-list .quantity{
@@ -257,7 +283,7 @@ html{
     border-radius: 50%;
     text-align: center;
     line-height: 24px;
-    margin-top: -3px;
+    margin-top: -12px;
 }
 
 /* Places */
@@ -301,6 +327,7 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    margin-left: 125px;
 }
 .place-buy-btn:hover{
     color: #000;
@@ -365,7 +392,7 @@ html{
     animation: modalFadeIn ease .5s;
 }
 .modal-header {
-    background: #009688;
+    background: #f5a6ba;
     height: 130px;
     display: flex;
     align-items: center;
@@ -404,7 +431,7 @@ html{
     padding: 16px;
 }
 #buy-tickets {
-    background: #009688;
+    background: #f5a6ba;
     border: none;
     color: #fff;
     width: 100%;
